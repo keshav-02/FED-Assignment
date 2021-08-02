@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gowun Batang', serif;
+    scroll-behavior: smooth;
+}
+
+p{
+    font-weight: 400;
+}
+
+body{
+    min-height: 100px;
+}
+
+.banner{
+    position: relative;
+    background:url(https://images.unsplash.com/photo-1476190292124-6afbe1e0fb07?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .content{
+    max-width: 900px;
+    text-align: center;
+}
+
+.banner .content h2{
+    color: white;
+    font-size: 5rem;
+}
+
+.banner .content span{
+    color: orange;
+}
+
+.banner .content p{
+    color: white;
+    font-size: 1.5rem;
+}
+
+header{
+    position: sticky;
+    background-color: #1E2424;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    
+}
+
+header .logo{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+header .logo::after{
+    content: '.';
+    color: orange;
+}
+
+header .nav{
+    /* position: sticky; */
+    display: flex;
+}
+
+header .nav li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .nav li a{
+    text-decoration: none;
+    color: white;
+    font-size:25px;
+}
+
+header .nav li a:hover{
+    color: orange;
+}
+
+section{
+    padding: 100px;
+    font-size: 25px;
+}
+
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .col50{
+    position: relative;
+    width: 48%;
+}
+
+section h2{
+    font-size: 2em;
+    font-weight: 300;
+}
+
+section span{
+    color: orange;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.about .imgBx{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.about .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu .row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;    
+}
+
+.menu .content .box{
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+}
+
+.menu .content .box:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+.menu .content .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.menu .content .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu .content .box .text{
+    padding: 15px 0 5px;
+}
+
+.menu .content .box .text h3{
+    font-weight: 400;
+    color: #111;
+}
+
+.contact{
+    background: url(https://images.unsplash.com/photo-1449962887303-b4a91c7c560a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+    background-size: cover;
+}
+
+.contact .row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contactForm{
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0,0,0,0,0.1);
+    max-width: 500px;
+    margin-top: 50px;
+}
+
+.contactForm h3{
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.contactForm .inputBox{
+    position: relative;
+    width: 92.5%;
+    margin-bottom: 20px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+
+.contactForm .inputBox input[type="submit"]
+{
+    font-size: 1em;
+    color: #fff;
+    background: orange;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.2s;
+    max-width: 100px;
+    border: none;
+    cursor: pointer;
+}
+
+.contactForm .inputBox input[type="submit"]:hover{
+    color: orange;
+    background: #fff;
+    border: 1px solid orange;
+}
+
+@media screen and (max-width:620px){
+    ul{
+        flex-direction: column;
+        align-items: center;
+    }
+}
