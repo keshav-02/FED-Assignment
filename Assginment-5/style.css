@@ -1,0 +1,45 @@
+body{
+    background-color: #b8bedd;
+    color: #003049;
+}
+
+.div2{
+    background-color: white;
+    height: 250px;
+}
+
+.div2 img{
+    padding: 2px;
+    margin-right: 200px;
+    height: 250px;
+    width: 250px;
+    float: left;
+}
+
+.div3{
+    background-color: white;
+    height: 150px;
+    padding: 10px;
+}
+
+.div4{
+    background-color: white;
+    height: 246px;
+    padding: 10px;
+}
+
+.div5{
+    background-color: white;
+    height: 329px;
+    padding: 10px;
+}
+
+#foot{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* #foot a{
+    text-decoration: none;
+    color: inherit;
+} */
